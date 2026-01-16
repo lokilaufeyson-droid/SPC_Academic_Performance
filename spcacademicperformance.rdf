@@ -1,0 +1,1831 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/hafizan/ontologies/2024/5/untitled-ontology-43/"
+     xml:base="http://www.semanticweb.org/hafizan/ontologies/2024/5/untitled-ontology-43/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#attached_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#attached_to">
+        <rdfs:domain rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Student"/>
+        <rdfs:range rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Group"/>
+        <rdfs:comment>attached_to</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#belong_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#belong_to">
+        <rdfs:domain rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Lecturer"/>
+        <rdfs:domain rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Student"/>
+        <rdfs:range rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Faculty"/>
+        <rdfs:comment>belong_to</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#consist_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#consist_of">
+        <rdfs:domain rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#University"/>
+        <rdfs:range rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Faculty"/>
+        <rdfs:comment>consist_of</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#enrols -->
+
+    <owl:ObjectProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#enrols">
+        <rdfs:domain rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Student"/>
+        <rdfs:range rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Course"/>
+        <rdfs:comment>enrols</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#has_academiccohort -->
+
+    <owl:ObjectProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#has_academiccohort">
+        <rdfs:domain rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Course"/>
+        <rdfs:range rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Cohort"/>
+        <rdfs:comment>has_academiccohort</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#has_assessment -->
+
+    <owl:ObjectProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#has_assessment">
+        <rdfs:domain rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Course"/>
+        <rdfs:range rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment"/>
+        <rdfs:comment>has_assessment</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#has_attendance -->
+
+    <owl:ObjectProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#has_attendance">
+        <rdfs:domain rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Student"/>
+        <rdfs:range rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Attendance"/>
+        <rdfs:comment>has_attendance</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#has_cohort -->
+
+    <owl:ObjectProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#has_cohort">
+        <rdfs:domain rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Student"/>
+        <rdfs:range rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Cohort"/>
+        <rdfs:comment>has_cohort</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#has_grade -->
+
+    <owl:ObjectProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#has_grade">
+        <rdfs:domain rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Student"/>
+        <rdfs:range rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Grade"/>
+        <rdfs:comment>has_grade</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#has_gradecount -->
+
+    <owl:ObjectProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#has_gradecount">
+        <rdfs:domain rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Course"/>
+        <rdfs:range rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Gradecount"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#has_messagepost -->
+
+    <owl:ObjectProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#has_messagepost">
+        <rdfs:domain rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Student"/>
+        <rdfs:range rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Messagepost"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#has_programme -->
+
+    <owl:ObjectProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#has_programme">
+        <rdfs:domain rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Course"/>
+        <rdfs:range rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Programme"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#has_semester -->
+
+    <owl:ObjectProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#has_semester">
+        <rdfs:domain rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Course"/>
+        <rdfs:domain rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Student"/>
+        <rdfs:range rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Semester"/>
+        <rdfs:comment>has_semester</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#is_a -->
+
+    <owl:ObjectProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#is_a">
+        <rdfs:domain rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Person"/>
+        <rdfs:range rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Lecturer"/>
+        <rdfs:range rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Student"/>
+        <rdfs:comment>is_a</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#offer -->
+
+    <owl:ObjectProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#offer">
+        <rdfs:domain rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Faculty"/>
+        <rdfs:range rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Course"/>
+        <rdfs:comment>offer</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#offered_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#offered_in">
+        <rdfs:domain rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Course"/>
+        <rdfs:range rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Group"/>
+        <rdfs:comment>offered_in</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#optional_to_have -->
+
+    <owl:ObjectProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#optional_to_have">
+        <rdfs:domain rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Course"/>
+        <rdfs:range rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Prerequisite"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#teach -->
+
+    <owl:ObjectProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#teach">
+        <rdfs:domain rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Lecturer"/>
+        <rdfs:range rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Course"/>
+        <rdfs:range rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Group"/>
+        <rdfs:comment>teach</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#undergraduate_type -->
+
+    <owl:ObjectProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#undergraduate_type">
+        <rdfs:domain rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Course"/>
+        <rdfs:domain rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Student"/>
+        <rdfs:range rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Studylevel"/>
+        <rdfs:comment>undergraduate_type</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#A -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#A"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#APR -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#APR"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#AUG -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#AUG"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#A_minus -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#A_minus"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#A_plus -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#A_plus"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment1 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment1"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment2 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment2"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment3 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment3"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment4 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment4"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment5 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment5"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment6 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment6"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment7 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment7"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment8 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment8"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment9 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment9"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#B -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#B"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#B_minus -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#B_minus"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#B_plus -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#B_plus"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#C -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#C"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#CTHLab -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#CTHLab"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#CTHLect -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#CTHLect"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#C_minus -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#C_minus"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#C_plus -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#C_plus"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Campuscode_attendance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Campuscode_attendance"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Campuscode_courseperformance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Campuscode_courseperformance"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Campuscode_post -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Campuscode_post"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Campuscode_studentperformance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Campuscode_studentperformance"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Cohort_attendance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Cohort_attendance"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Cohort_courseperformance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Cohort_courseperformance"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Cohort_post -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Cohort_post"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Cohort_studentperformance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Cohort_studentperformance"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Compcode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Compcode"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Coursecode_attendance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Coursecode_attendance"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Coursecode_courseperformance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Coursecode_courseperformance"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Coursecode_post -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Coursecode_post"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Coursecode_studentperformance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Coursecode_studentperformance"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Coursename -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Coursename"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Credit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Credit"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#D -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#D"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#DEC -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#DEC"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#D_plus -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#D_plus"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#E -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#E"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Enrolsuggestion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Enrolsuggestion"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#F -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#F"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#FEB -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#FEB"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Faculty_attendance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Faculty_attendance"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Faculty_post -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Faculty_post"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Facultyname_courseperformance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Facultyname_courseperformance"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Facultyname_studentperformance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Facultyname_studentperformance"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Grade -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Grade"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Group_attendance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Group_attendance"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Group_courseperformance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Group_courseperformance"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Group_post -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Group_post"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Group_studentperformance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Group_studentperformance"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#JAN -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#JAN"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#JUL -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#JUL"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#JUN -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#JUN"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#LecturerID_attendance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#LecturerID_attendance"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#LecturerID_courseperformance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#LecturerID_courseperformance"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#LecturerID_post -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#LecturerID_post"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#LecturerID_studentperformance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#LecturerID_studentperformance"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Lecturername_attendance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Lecturername_attendance"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Lecturername_courseperformance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Lecturername_courseperformance"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Lecturername_post -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Lecturername_post"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Lecturername_studentperformance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Lecturername_studentperformance"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#MAR -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#MAR"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#MEI -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#MEI"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Matricno -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Matricno"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Matricno_attendance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Matricno_attendance"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Matricno_post -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Matricno_post"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#NOV -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#NOV"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#OCT -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#OCT"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Prerequisitecode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Prerequisitecode"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Programme_courseperformance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Programme_courseperformance"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Programme_studentperformance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Programme_studentperformance"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#SEPT -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#SEPT"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Semester_attendance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Semester_attendance"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Semester_courseperformance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Semester_courseperformance"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Semester_post -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Semester_post"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Semester_studentperformance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Semester_studentperformance"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Studentname -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Studentname"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Studentname_attendance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Studentname_attendance"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Studentname_post -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Studentname_post"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Studylevel_attendance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Studylevel_attendance"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Studylevel_courseperformance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Studylevel_courseperformance"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Studylevel_post -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Studylevel_post"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Studylevel_studentperformance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Studylevel_studentperformance"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Total -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Total"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Totalmessagepost -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Totalmessagepost"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#University_attendance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#University_attendance"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#University_post -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#University_post"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Universityname_courseperformance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Universityname_courseperformance"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Universityname_studentperformance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Universityname_studentperformance"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Weightage1 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Weightage1"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Weightage2 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Weightage2"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Weightage3 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Weightage3"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Weightage4 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Weightage4"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Weightage5 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Weightage5"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Weightage6 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Weightage6"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Weightage7 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Weightage7"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Weightage8 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Weightage8"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Weightage9 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Weightage9"/>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#prerequisitename -->
+
+    <owl:DatatypeProperty rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#prerequisitename"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment -->
+
+    <owl:Class rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment">
+        <rdfs:subClassOf rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Course"/>
+        <rdfs:comment>Assessment</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Attendance -->
+
+    <owl:Class rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Attendance">
+        <rdfs:subClassOf rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Student"/>
+        <rdfs:comment>Attendance</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Cohort -->
+
+    <owl:Class rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Cohort">
+        <rdfs:subClassOf rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Course -->
+
+    <owl:Class rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Course">
+        <rdfs:subClassOf rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Faculty"/>
+        <rdfs:comment>Course</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Faculty -->
+
+    <owl:Class rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Faculty">
+        <rdfs:subClassOf rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#University"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Grade -->
+
+    <owl:Class rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Grade">
+        <rdfs:subClassOf rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Student"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Gradecount -->
+
+    <owl:Class rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Gradecount">
+        <rdfs:subClassOf rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Group -->
+
+    <owl:Class rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Group">
+        <rdfs:subClassOf rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Lecturer -->
+
+    <owl:Class rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Lecturer">
+        <rdfs:subClassOf rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Person"/>
+        <rdfs:comment>Lecturer</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Messagepost -->
+
+    <owl:Class rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Messagepost">
+        <rdfs:subClassOf rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Student"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Person -->
+
+    <owl:Class rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Person">
+        <rdfs:comment>Person</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Prerequisite -->
+
+    <owl:Class rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Prerequisite">
+        <rdfs:subClassOf rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Programme -->
+
+    <owl:Class rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Programme">
+        <rdfs:subClassOf rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Semester -->
+
+    <owl:Class rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Semester">
+        <rdfs:subClassOf rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Student"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Student -->
+
+    <owl:Class rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Student">
+        <rdfs:subClassOf rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Person"/>
+        <rdfs:comment>Student</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Studylevel -->
+
+    <owl:Class rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Studylevel">
+        <rdfs:subClassOf rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Student"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#University -->
+
+    <owl:Class rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#University"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#A -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#A">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Gradecount"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#APR -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#APR">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Attendance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#AUG -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#AUG">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Attendance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#A_minus -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#A_minus">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Gradecount"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#A_plus -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#A_plus">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Gradecount"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment1">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment2">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment3">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment4">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment5">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment6">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment7">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment8">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment9">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#B -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#B">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Gradecount"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#B_minus -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#B_minus">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Gradecount"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#B_plus -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#B_plus">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Gradecount"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#C -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#C">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Gradecount"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#CTHLab -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#CTHLab">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Prerequisite"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#CTHLect -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#CTHLect">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Prerequisite"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#C_minus -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#C_minus">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Gradecount"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#C_plus -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#C_plus">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Gradecount"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Campuscode_attendance -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Campuscode_attendance">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#University"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Campuscode_courseperformance -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Campuscode_courseperformance">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#University"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Campuscode_post -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Campuscode_post">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#University"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Campuscode_studentperformance -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Campuscode_studentperformance">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#University"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Cohort_attendance -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Cohort_attendance">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Cohort"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Cohort_courseperformance -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Cohort_courseperformance">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Cohort"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Cohort_post -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Cohort_post">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Cohort"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Cohort_studentperformance -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Cohort_studentperformance">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Cohort"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Compcode -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Compcode">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Prerequisite"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Coursecode_attendance -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Coursecode_attendance">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Course"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Coursecode_courseperformance -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Coursecode_courseperformance">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Course"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Coursecode_post -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Coursecode_post">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Course"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Coursecode_studentperformance -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Coursecode_studentperformance">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Course"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Coursename -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Coursename">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Course"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Credit -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Credit">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Prerequisite"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#D -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#D">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Gradecount"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#DEC -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#DEC">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Attendance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#D_plus -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#D_plus">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Gradecount"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#E -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#E">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Gradecount"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Enrolsuggestion -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Enrolsuggestion">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Prerequisite"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#F -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#F">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Gradecount"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#FEB -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#FEB">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Attendance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Faculty_post -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Faculty_post">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Faculty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Facultyname_courseperformance -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Facultyname_courseperformance">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Faculty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Facultyname_studentperformance -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Facultyname_studentperformance">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Faculty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Facuty_attendance -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Facuty_attendance">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Faculty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Grade -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Grade">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Grade"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Group_attendance -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Group_attendance">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Group"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Group_courseperformance -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Group_courseperformance">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Group"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Group_post -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Group_post">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Group"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Group_studentperformance -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Group_studentperformance">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Group"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#JAN -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#JAN">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Attendance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#JUL -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#JUL">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Attendance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#JUN -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#JUN">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Attendance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Lecturename_courseperformance -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Lecturename_courseperformance">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Lecturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Lecturename_studentperformance -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Lecturename_studentperformance">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Lecturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#LecturerID_attendance -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#LecturerID_attendance">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Lecturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#LecturerID_courseperformance -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#LecturerID_courseperformance">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Lecturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#LecturerID_post -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#LecturerID_post">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Lecturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#LecturerID_studentperformance -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#LecturerID_studentperformance">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Lecturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Lecturername_attendance -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Lecturername_attendance">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Lecturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Lecturername_post -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Lecturername_post">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Lecturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#MAR -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#MAR">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Attendance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#MEI -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#MEI">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Attendance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Matricno -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Matricno">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Student"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Matricno_attendance -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Matricno_attendance">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Student"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Matricno_post -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Matricno_post">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Student"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#NOV -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#NOV">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Attendance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#OCT -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#OCT">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Attendance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Prerequisitecode -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Prerequisitecode">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Prerequisite"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Prerequisitename -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Prerequisitename">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Prerequisite"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Programme_courseperformance -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Programme_courseperformance">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Programme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Programme_studentperformance -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Programme_studentperformance">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Programme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#SEPT -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#SEPT">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Attendance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Semester_attendance -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Semester_attendance">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Semester"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Semester_courseperformance -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Semester_courseperformance">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Semester"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Semester_post -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Semester_post">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Semester"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Semester_studentperformance -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Semester_studentperformance">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Semester"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Studentname -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Studentname">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Student"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Studentname_attendance -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Studentname_attendance">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Student"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Studentname_post -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Studentname_post">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Student"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Studylevel_attendance -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Studylevel_attendance">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Studylevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Studylevel_courseperformance -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Studylevel_courseperformance">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Studylevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Studylevel_post -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Studylevel_post">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Studylevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Studylevel_studentperformance -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Studylevel_studentperformance">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Studylevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Total -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Total">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Totalmessagepost -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Totalmessagepost">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Messagepost"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#University_attendance -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#University_attendance">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#University"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#University_post -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#University_post">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#University"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Universityname_courseperformance -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Universityname_courseperformance">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#University"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Universityname_studentperformance -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Universityname_studentperformance">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#University"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Weightage1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Weightage1">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Weightage2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Weightage2">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Weightage3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Weightage3">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Weightage4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Weightage4">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Weightage5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Weightage5">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Weightage6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Weightage6">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Weightage7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Weightage7">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Weightage8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Weightage8">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Weightage9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Weightage9">
+        <rdf:type rdf:resource="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Assessment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.smartgreen.my/SW/MOOC/SPC/spcacademicperformance#Grade">
+        <rdfs:comment>Grade</rdfs:comment>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
