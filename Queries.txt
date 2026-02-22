@@ -1,0 +1,24 @@
+PREFIX SPC: <http://........ontology path........../spc.rdf#>
+SELECT ?Coursecode ?Group ?Semester ?Studentname ?Matricno (?Weightage1 AS ?Assessment1) (?Weightage2 AS ? Assessment2) (?Weightage4 AS ? Assessment3) (?Weightage4 AS ? Assessment4) (?Weightage5 AS ? Assessment5) 
+
+(ROUND((xsd:decimal(?Weightage1) + xsd:decimal(?Weightage2) + xsd:decimal(?Weightage3)+ xsd:decimal(?Weightage4)+ xsd:decimal(?Weightage5)) * 10) / 10.0 AS ?Totalcarrymark)
+
+WHERE { 
+    ?x SPC:Coursecode_studentperformance ?Coursecode.
+    ?x SPC:Group_studentperformance ?Group.
+    ?x SPC:Semester_studentperformance ?Semester.
+    ?x SPC:Matricno_studentperformance ?Matricno.
+    ?x SPC:Studentname_studentperformance  ?Studentname.
+    ?x SPC:Weightage1 ?Weightage1.
+    ?x SPC:Weightage2 ?Weightage2.
+    ?x SPC:Weightage4 ?Weightage3.
+    ?x SPC:Weightage5 ?Weightage4.
+    ?x SPC:Weightage6 ?Weightage5.
+
+    FILTER (regex(?Semester, "1-2021/2022"))                         
+    FILTER (regex(?Coursecode, “UniA_F1_Course1"))
+    FILTER (regex(?Group, “2A"))
+    
+    FILTER (ROUND((xsd:decimal(?Weightage1) + xsd:decimal(?Weightage2) + 
+    xsd:decimal(?Weightage3) + xsd:decimal(?Weightage4) + xsd:decimal(?Weightage5)) * 10) / 10.0 >= 45)
+}
